@@ -1,193 +1,21 @@
-<html lang="en" class="grid">
+<html lang="it" class="website">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    * {
-      margin:0;
-      font-family: Helvetica, sans-serif;
-      letter-spacing: -1px;
-      font-size: 18px;
-      font-weight: 400;
-    }
-
-    .navbar {
-      position: fixed;
-      display: flex;
-      width: 100%;
-      height: 20px;
-      z-index: 100;
-    }
-
-    .navbar-element {
-      flex: 3 1 30%;
-      padding: 0px 5px;
-      background-color: white;
-    }
-
-    .navbar-element:hover {
-      background-color: black;
-      color: rgb(0, 255, 0);
-      cursor: crosshair;
-    }
-
-
-    .base-grid {
-      padding-top: 20px;
-      display: flex;
-      flex-direction: row; 
-      flex-wrap: wrap;
-    }
-
-    .cell {
-      aspect-ratio: 1;
-      background-color: white;
-      flex: 3 1 30%;
-      position: relative;
-      
-    }
-
-    .cell img {
-      width: calc(100% + 10px);
-      height: calc(100% + 6px);
-      object-fit: cover;
-    }
-
-    .cell p {
-      padding: 3px 5px;
-    }
-
-
-    .cell .img-filter {
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      background-color: red;
-      mix-blend-mode: multiply;
-      opacity: 0;
-    }
-
-    .cell .img-filter:hover {
-      opacity: 1;
-    }
-    
-    .cell .sticker {
-      position: absolute;
-      top: -0px;
-      left: -10px;
-      border-radius: 20px;
-      background-color: red;
-      transform: rotate(-20deg);
-      padding: 0px 3px;
-      transition: all 0.3s;
-    }
-    .cell:hover .sticker {
-      background-color: black;
-      color: red;
-      top: -30px;
-      left: 0;
-      transform: rotate(0deg);
-
-    }
-
-    .cell:hover {
-      background-color: black;
-      color: red;
-      cursor: crosshair;
-    }
-
-    .footer {
-      display: flex;
-      flex-direction: row; 
-      flex-wrap: wrap;
-    }
-
-    .footer-cell {
-      flex: 3 1 30%;
-    }
-
-    .footer-cell p {
-      padding: 3px 5px;
-    }
-
-    .footer-cell:hover {
-      background-color: black;
-      color: white;
-      cursor: crosshair;
-    }
-
-    @media (max-width: 700px) {
-      .navbar {
-        height: 60px;
-      }
-
-      .base-grid {
-        padding-top: 60px;
-      }
-
-      .cell {
-        flex: 1 1 100%;
-      }
-    }
-
-  </style>
-
+  <title>JS Practice</title>
 </head>
 <body>
-  <nav class="navbar">
-    <div class="navbar-element">Home</div>
-    <div class="navbar-element">Project</div>
-    <div class="navbar-element">About</div>
+  <button title="Good Job" class="red-button" onclick="
+    alert('Good Job!');
+    ">
+    Hello
+  </button>
 
-  </nav>
-  <div class="base-grid">
-    <div class="cell">
-      <p>OP 01 X-120</p>
-    </div>
-    <div class="cell"> </div>
-    <div class="cell">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-    </div>
-    <div class="cell">
-      <div class="img-filter"></div>
-      <img src="resources/Workfrom home-12.png">
-     </div>
-    <div class="cell">
-      <p>Abstract 01</p>
-    </div>
-    <div class="cell">
-      <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-      <div class="sticker">AMAZING</div>
-    </div>
-    <div class="cell">
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-    </div>
-    <div class="cell">
-      <p>12.01.2202</p>
-    </div>
-    <div class="cell"> </div>
-    <div class="cell"> 
-    </div>
-    <div class="cell"> 
-    </div>
-    <div class="cell"> 
-
-    </div>
-  </div>
-
-  <div class="footer">
-    <div class="footer-cell"> 
-      <p>Studio Mediterraneo</p>
-    </div>
-     
-    <div class="footer-cell"> 
-      <p>2023</p>
-    </div>
-    <div class="footer-cell"> 
-      <p>Instagram <br>Behance</p>
-    </div>
-  </div>
-  
+  <script>
+    console.log (2 + 2)
+    console.log('some' + 'text')
+  </script>
 </body>
 </html>
+
+
